@@ -1,6 +1,6 @@
 PhD Retreat 2024: Workshop 
 ---
-You need a working python version on your machine. 
+You need a working python version on your machine. Moreover, the use of VSCode is recommended.
 
 1. Install the python package virtual env with 'pip install virtualenv' 
 2. Create virtual environment with 'py -m venv .venv'

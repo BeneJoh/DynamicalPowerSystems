@@ -15,7 +15,6 @@ def create_2Dphaseportrait(problem, x_lims, y_lims, t, N=100, normalize=True):
             U[i, j], V[i, j] = problem(t, [X[i, j], Y[i, j]])
     # Normalize the vectors
     vec_mag = np.sqrt(U**2 + V**2)
-    # max_vec_mag = np.max(vec_mag)
     if normalize:
         U /= vec_mag; V /= vec_mag
     
