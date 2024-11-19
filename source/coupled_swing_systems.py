@@ -7,7 +7,7 @@ class SmibSystem:
         self.M = M # inertia
         self.D = D # damping
         self.P = P # power injection/consumption
-        self.K = K  # coupling constant
+        self.K = K # coupling constant
         if verbose: 
             print('SMIB system initialized with M={}, D={}, P={}, K={}'.format(M, D, P, K))
 
