@@ -46,7 +46,7 @@ class GeneralModel:
         phis = u[0:(self.N)]
         omegas = u[self.N:]
         # Compute interactions
-        interactions = np.array([np.sum([self.Kmatrix[i, j] * np.sin(phis[j] - phis[i]) for i in range(self.N)]) for j in range(self.N)])
+        interactions = np.array([np.sum([self.Kmatrix[i, j] * np.sin(phis[j] - phis[i]) for j in range(self.N)]) for i in range(self.N)])
         # Compute derivatives
         dphis = omegas.copy()
         domegas = (self.Ps - self.Ds * omegas + interactions) / self.Ms
